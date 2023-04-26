@@ -1,7 +1,5 @@
 import sys
 from API_requests import heroes_info
-import requests
-
 sys.path.insert(1, '../API_requests.py')
 
 

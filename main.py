@@ -3,38 +3,6 @@ from logic.models.heroes_matchup import HeroMatchupsWR
 from logic.models.player_wl import PlayerWL
 from logic.models.player import Player
 from logic.models.calculate_win_prob import HeroWinProbability
-#
-#
-# #
-#
-# rad_hero_1 = Hero(name=input("Hero name: "))
-# #
-#
-# print(rad_hero_1.get_hero_wr())
-# hero_id = rad_hero_1.id
-#
-#
-# rad_hero_1_MWR = HeroMatchupsWR(id=rad_hero_1.id)
-# print(rad_hero_1_MWR.id)
-# print(rad_hero_1_MWR.get_enemies_info())
-# print(rad_hero_1_MWR.get_hero_matchup())
-#
-#
-# rad_player_1 = Player(nickname=input("Enter Player's nickname: "))
-#
-# rad_hero_1_PWL = PlayerWL(account_id=rad_player_1.id, hero_id=rad_hero_1.id)
-# print(rad_hero_1_PWL.get_players_wl_info())
-# print(rad_hero_1_PWL.get_players_wl())
-#
-# # rad_hero_1_WP = HeroWinProbability(
-# #     hero_wr=rad_hero_1.get_hero_wr(),
-# #     hero_matchup=rad_hero_1_MWR.get_hero_matchup(),
-# #     players_wl=rad_hero_1_PWL.get_players_wl()
-# # )
-# # print(rad_hero_1_WP.calculate_hero_win_prob())
-#
-# # rad_hero_1_WP = HeroWinProbability(hero_wr=rad_hero_1.get_hero_wr(), hero_matchup=rad_hero_1_MWR.get_hero_matchup(), players_wl=rad_hero_1_PWL.get_players_wl())
-# # print(rad_hero_1_WP.calculate_hero_win_prob())
 
 wp_list = []
 

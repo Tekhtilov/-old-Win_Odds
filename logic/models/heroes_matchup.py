@@ -21,9 +21,7 @@ class HeroMatchupsWR:
         for hero in heroes_info:
             if hero['localized_name'] in enemy_team.enemy_team_list:
                 self.heroes_dict[hero['id']] = hero['localized_name']
-        # return self.heroes_dict
 
-    # def get_hero_matchup(self):
         hero_matchupWR_list = []
         for matchup in self.matchup_data:
             if matchup['hero_id'] in self.heroes_dict:
@@ -31,5 +29,5 @@ class HeroMatchupsWR:
                 hero_matchupWR_list.append(matchupWR)
         sum_list = sum(hero_matchupWR_list)
         hero_matchup_wr = sum_list / 5
-        # print(f'Winrate of against enemy team = {hero_matchup_wr}')
+
         return hero_matchup_wr
