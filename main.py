@@ -62,4 +62,4 @@ print(f"General win rate of {rad_hero_5.hero.name}: {rad_hero_5_hero_wr}%\n{rad_
 print()
 print(wp_list)
 
-print(f'Teams win probability = {sum(wp_list)}')
+print(f'Radiants win probability = {sum(wp_list)}')

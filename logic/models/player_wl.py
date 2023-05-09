@@ -18,5 +18,8 @@ class PlayerWL(Hero, Player):
     # def get_players_wl(self):
         heroes_wins = self.players_wl_data['win']
         heroes_losses = self.players_wl_data['lose']
-        heroes_winrate = int(heroes_wins / (heroes_wins + heroes_losses) * 100)
+        if heroes_losses == 0 and heroes_wins == 0:
+            heroes_winrate = 0
+        else:
+            heroes_winrate = int(heroes_wins / (heroes_wins + heroes_losses) * 100)
         return heroes_winrate
